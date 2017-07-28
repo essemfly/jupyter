@@ -97,3 +97,5 @@ ENV/
 
 # mypy
 
+# DS_STORE
+*.DS_STORE
