@@ -1,0 +1,16 @@
+# you can write to stdout for debugging purposes, e.g.
+# print("this is a debug message")
+
+
+def solution(A):
+    # write your code in Python 3.6
+    ans = 0
+    num_east_cars = len(A) - sum(A)
+    for car in reversed(A):
+        if car == 0:
+            num_east_cars -= 1
+        else:
+            ans += num_east_cars
+            if ans > 1000000000:
+                return -1
+    return ans
