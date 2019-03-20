@@ -102,3 +102,7 @@ ENV/
 
 # PyCharm
 .idea
+
+# Csv & Zip
+*.csv
+*.zip
